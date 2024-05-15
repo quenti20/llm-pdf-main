@@ -1,0 +1,11 @@
+streamlit==1.19.0
+langchain==0.0.216
+langchainplus-sdk==0.0.17
+langcodes==3.3.0  # Replace {version} with the actual version if it's specified elsewhere
+PyPDF2==1.26.0
+openai==0.27.6
+openai-schema-pydantic==1.2.4
+torch==1.10.0
+faiss-cpu==1.7.4
+transformers==4.12.0
+requests==2.31.0
