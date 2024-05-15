@@ -11,8 +11,12 @@ from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 from PyPDF2 import PdfReader
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-os.environ["OPENAI_API_KEY"] = "sk-proj-2kgQAWHrHUAc1s5kpaNFT3BlbkFJtvbV83yvvNqZo17bcCOr"
+
+#os.environ["OPENAI_API_KEY"] = "sk-proj-2kgQAWHrHUAc1s5kpaNFT3BlbkFJtvbV83yvvNqZo17bcCOr"
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
 def get_pdf_text(pdf_docs):
